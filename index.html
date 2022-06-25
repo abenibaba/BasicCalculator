@@ -5,6 +5,17 @@
 <h2>Basic Arithmetic Calculator Without Frontend</h2>
 <p>Frontend Development - Javascript Module Task</p>
 
+<hr color="blue" align="left" size="1px" width="30%">
+
+
+<p id="display1"></p>
+
+<p id="display2"></p>
+
+<p id="display3"></p>
+
+<p id="display4"></p>
+
 <script>
 
 // take the operator input
@@ -30,10 +41,17 @@ else {
     result = number1 / number2;
 }
 
-// display the result
-console.log(`${number1} ${operator} ${number2} = ${result}`);
+//List User Options/Parameters
+document.getElementById("display1").innerHTML = `Chosen Operator: ${operator}`;
 
-console.log(`${number1} + " " + ${operator}  + " " + ${number2} " = " ${result}`);
+document.getElementById("display2").innerHTML = `First Number: ${number1}`;
+
+document.getElementById("display3").innerHTML = `Second Number: ${number2}`;
+
+
+// Display Final Result from the object:
+document.getElementById("display4").innerHTML = `${number1} ${operator} ${number2} = ${result}`;
+
 </script>
 
 </body>
